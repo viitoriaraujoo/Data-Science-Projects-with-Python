@@ -1,0 +1,278 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOaqkLY0qiU+8YXH7KHdHOf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/viitoriaraujoo/Data-Science-Projects-with-Python/blob/main/Practice\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Capitulo 1"
+      ],
+      "metadata": {
+        "id": "uct-2YkUdgau"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 2. Verificando a versão do Python"
+      ],
+      "metadata": {
+        "id": "S2S-LPrlr3hu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!python -V"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZxuoJaXauBsS",
+        "outputId": "3908bfc0-18b5-4867-e7d7-ca5fd1561a47"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python 3.11.13\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 3. For Loop"
+      ],
+      "metadata": {
+        "id": "Ng_R5ZtTukG6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for counter in range(5):  #### Comando para exibir os valores de 0 a 4 na tela.\n",
+        "  print(counter)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lMI96dmzuHIt",
+        "outputId": "0dd746c9-083e-4aa4-84b1-b3ebdbbf2abe"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 4. Dicionário de frutas"
+      ],
+      "metadata": {
+        "id": "uPxxm58DuxQM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "example_dict = {'apples':5, 'oranges':8, 'bananas':13}"
+      ],
+      "metadata": {
+        "id": "fDceEO_tu8tr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 5. Converta o dicionário em uma lista"
+      ],
+      "metadata": {
+        "id": "rU3vhx8tvDk0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict_to_list = list(example_dict)\n",
+        "dict_to_list"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "b3tYJyLlvJAD",
+        "outputId": "b7f99051-40ed-40a2-ab63-1d0f3ba5e2b2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['apples', 'oranges', 'bananas']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict_to_list = list(example_dict.values())\n",
+        "dict_to_list"
+      ],
+      "metadata": {
+        "id": "om9Ir2Z4uctL",
+        "outputId": "94971b09-9844-441f-e7bb-b0f50760d1eb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[5, 8, 13]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " ## 6. Combinar a lista de frutas existente com uma nova lista"
+      ],
+      "metadata": {
+        "id": "iRuvLoGWveuU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict_to_list = dict_to_list + ['pears']\n",
+        "dict_to_list"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J4qYS-L0vm8a",
+        "outputId": "b2533880-7586-4111-ca0d-a7d502783a79"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['apples',\n",
+              " 'oranges',\n",
+              " 'bananas',\n",
+              " 'pears',\n",
+              " 'pears',\n",
+              " 'pears',\n",
+              " 'pears',\n",
+              " 'pears',\n",
+              " 'pears']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 23
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 7. Classifique a lista de frutas em ordem alfabética"
+      ],
+      "metadata": {
+        "id": "Jdh_OnhmvsIM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sorted(dict_to_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_kNApakOv4Il",
+        "outputId": "d527c12b-1a53-4485-ad10-96ce9f05960e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['apples',\n",
+              " 'bananas',\n",
+              " 'oranges',\n",
+              " 'pears',\n",
+              " 'pears',\n",
+              " 'pears',\n",
+              " 'pears',\n",
+              " 'pears',\n",
+              " 'pears']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    }
+  ]
+}
